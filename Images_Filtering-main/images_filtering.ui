@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1633</width>
+    <height>915</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+background-color: rgb(218, 218, 218);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,3,1,3">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/f1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="normal_image">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/ff3.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="after_filter">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2" stretch="2,1,4">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/NEW1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/ff2.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="after_frequency_filter">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,3,1,3">
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/pic4.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="histogram">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="styleSheet">
+         <string notr="true">background-image: url(:/newPrefix/ff1.png);</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="after_histogram">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1633</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+   </widget>
+   <widget class="QMenu" name="menuFilter">
+    <property name="title">
+     <string>Filter</string>
+    </property>
+    <widget class="QMenu" name="menuHigh_Filter">
+     <property name="title">
+      <string>High Filter</string>
+     </property>
+     <widget class="QMenu" name="menuSpatial">
+      <property name="title">
+       <string>Spatial</string>
+      </property>
+      <addaction name="actionGray_Scale"/>
+     </widget>
+     <widget class="QMenu" name="menuFrequency">
+      <property name="title">
+       <string>Frequency</string>
+      </property>
+      <addaction name="actionGray_Scale_2"/>
+     </widget>
+     <addaction name="menuSpatial"/>
+     <addaction name="menuFrequency"/>
+    </widget>
+    <widget class="QMenu" name="menuLow_Filter">
+     <property name="title">
+      <string>Low Filter</string>
+     </property>
+     <widget class="QMenu" name="menuSpatial_2">
+      <property name="title">
+       <string>Spatial </string>
+      </property>
+      <addaction name="actionGray_Scale_3"/>
+     </widget>
+     <widget class="QMenu" name="menuFrequency_2">
+      <property name="title">
+       <string>Frequency</string>
+      </property>
+      <addaction name="actionGrary_Scale"/>
+     </widget>
+     <addaction name="menuSpatial_2"/>
+     <addaction name="menuFrequency_2"/>
+    </widget>
+    <widget class="QMenu" name="menuMedian_Filter">
+     <property name="title">
+      <string>Median Filter</string>
+     </property>
+     <widget class="QMenu" name="menuSpatial_3">
+      <property name="title">
+       <string>Spatial </string>
+      </property>
+      <addaction name="actionGray_Scale_4"/>
+     </widget>
+     <addaction name="menuSpatial_3"/>
+    </widget>
+    <widget class="QMenu" name="menuLa_placian_Filter">
+     <property name="title">
+      <string>La placian Filter</string>
+     </property>
+     <widget class="QMenu" name="menuSpatial_4">
+      <property name="title">
+       <string>Spatial</string>
+      </property>
+      <addaction name="actionGray_Scale_6"/>
+     </widget>
+     <addaction name="menuSpatial_4"/>
+    </widget>
+    <addaction name="menuHigh_Filter"/>
+    <addaction name="menuLow_Filter"/>
+    <addaction name="menuMedian_Filter"/>
+    <addaction name="menuLa_placian_Filter"/>
+   </widget>
+   <widget class="QMenu" name="menuHistogram">
+    <property name="title">
+     <string>Histogram</string>
+    </property>
+    <addaction name="actionHistogram_equlizer"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuFilter"/>
+   <addaction name="menuHistogram"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale_2">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_2">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale_3">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_3">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGrary_Scale">
+   <property name="text">
+    <string>Grary Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_4">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale_4">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_5">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale_5">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_6">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale_6">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_7">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionGray_Scale_7">
+   <property name="text">
+    <string>Gray Scale</string>
+   </property>
+  </action>
+  <action name="actionColor_8">
+   <property name="text">
+    <string>Color</string>
+   </property>
+  </action>
+  <action name="actionHistogram_equlizer">
+   <property name="text">
+    <string>Perform Histogram</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="style.qrc"/>
+ </resources>
+ <connections/>
+</ui>
