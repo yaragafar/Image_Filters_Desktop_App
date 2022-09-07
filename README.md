@@ -3,9 +3,9 @@
 
 ## Team members
 - Sandra Essa
--Salma Hussien
--Sara Khaled
--Habiba Hanafy
+- Salma Hussien
+- Sara Khaled
+- Habiba Hanafy
 - Yara Hossam
 
 ### Table of Contents:-
